@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <title>Document</title>
+</head>
+<body>
+    <!-- ✅ Responsive Navbar -->
+
+<nav class=" w-full">
+  <div class="w-full px-4 sm:px-6 2xl:px-20 xl:px-20 lg:px-10 py-4 sm:py-6 lg:py-16">
+    <div class="flex justify-between items-center flex-wrap">
+      
+      <!-- 🔹 Left: Logo -->
+      <div class="flex-shrink-0">
+        <img class="2xl:w-72 2xl:h-16 w-48 h-10" 
+             src="./assets/img/Logo-Pods1b 1.png" 
+             alt="Logo">
+      </div>
+
+      <!-- 🔹 Toggle Button (Mobile + Tablet) -->
+      <div class="lg:hidden ml-auto">
+        <button id="menu-btn" class="text-black focus:outline-none">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- 🔹 Center: Links (Desktop Only) -->
+      <div class="hidden lg:flex flex-wrap justify-center font-bold 
+                  text-base 2xl:text-xl xl:text-sm
+                  gap-x-4 sm:gap-x-6 lg:gap-x-10 xl:gap-x-12 gap-y-3 flex-1">
+        <a href="./index.html" class="text-black hover:text-sky-500">Home</a>
+        <a href="./About.html" class="text-black hover:text-sky-500">About Us</a>
+        <a href="./Podcast.html" class="text-black hover:text-sky-500">Podcast</a>
+        <a href="./Program.html" class="text-black hover:text-sky-500">Program</a>
+        <a href="./blog.html" class="text-black hover:text-sky-500">Pages</a>
+        <a href="./Contact.html" class="text-black hover:text-sky-500">Contact</a>
+      </div>
+
+      <!-- 🔹 Right: Button (Desktop Only) -->
+      <div class="hidden lg:block ml-auto">
+        <a href="./multi-blog.html"
+           class="px-12 py-3 lg:py-4 rounded-full bg-black text-white hover:bg-sky-500 transition 
+           font-bold text-base 2xl:text-xl xl:text-sm">
+        Donated
+        </a>
+      </div>
+
+    </div>
+
+    <!-- 🔹 Mobile/Tablet Menu -->
+    <div id="menu" class="hidden lg:hidden mt-6 space-y-6 font-bold text-base bg-black/70 p-6 rounded-xl">
+      <a href="./index.html" class="block text-white hover:text-[#00FF9C]">Home</a>
+      <a href="./About.html" class="block text-white hover:text-[#00FF9C]">About Us</a>
+      <a href="./Podcast.html" class="block text-white hover:text-[#00FF9C]">Podcast</a>
+      <a href="./Program.html" class="block text-white hover:text-[#00FF9C]">Program</a>
+      <a href="./blog.html" class="block text-white hover:text-[#00FF9C]">Pages</a>
+       <a href="./Contact.html" class="block text-white hover:text-[#00FF9C]">Contact</a>
+      <a href="./multi-blog.html"
+         class="block w-full text-center px-4 py-3 rounded-lg bg-white text-black hover:bg-sky-500 transition font-bold">
+        Donated
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- 🚀 Hero Section -->
+<section class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 ">
+  <div class="relative bg-cover w-full bg-center bg-no-repeat rounded-[31px] 
+              2xl:py-20 2xl:px-28 xl:py-10 py-10" 
+       style="background-image: url(./assets/img/Rectangle\ 41.png);">
+    
+    <!-- 🔹 Overlay -->
+    <div class="absolute inset-0 bg-black/50 rounded-[31px]"></div>
+    
+    <div class="relative flex justify-center items-center w-full">
+      <div class="w-full text-center">
+          
+        <!-- Main Heading -->
+        <div>
+          <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl 
+                     xl:text-[90px] 2xl:text-[128px] font-bold 
+                     text-white leading-snug sm:leading-tight md:leading-[80px] 
+                     xl:leading-[100px] 2xl:leading-[119px] pb-6 sm:pb-10">
+           About Us 
+          </h1>
+        </div>
+        
+        <!-- Paragraph -->
+        <div>
+          <p class="text-base sm:text-lg md:text-xl lg:text-2xl 
+                     xl:text-3xl font-normal  text-white">
+            Home-About Us
+          </p>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+
+<section class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-20  pt-20">
+ 
+     <div class="w-full  grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left Content -->
+    <div class="text-center lg:text-left space-y-6">
+         <p class="text-base sm:text-lg 2xl:text-2xl font-bold  text-[#999999]">
+       About Pods
+      </p>
+      <h2 class="text-2xl sm:text-3xl  2xl:text-[89px] lg:text-5xl font-bold text-[#1E1E1E]">
+      Epic Headlines,<br class="hidden 2xl:block xl:block">
+       Always Fresh,<br class="hidden 2xl:block xl:block">
+        Always Here
+      </h2>
+     
+    </div>
+
+    <!-- Right Content -->
+    <div class="flex  justify-center lg:justify-end items-center ">
+      <img src="./assets/img/Rectangle 43.png" alt="">
+    </div>
+
+  </div>
+<div class="w-full flex flex-col lg:flex-row justify-between pt-8 sm:pt-12 lg:pt-16">
+  
+  <!-- Left Content -->
+  <div class="text-center lg:text-left space-y-6 w-full lg:w-3/5">
+    <p class="text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl font-normal text-[#1E1E1E] leading-relaxed">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis tincidunt elit sed pretium. 
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+      Aliquam non molestie lacus. Nunc tincidunt vel arcu non rutrum.
+    </p>
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex justify-center lg:justify-end items-center w-full lg:w-2/5 mt-6 lg:mt-0">
+    <button type="submit"
+      class="bg-[#1E1E1E] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold text-white px-6 sm:px-8 md:px-10 lg:px-12 py-2 sm:py-3 md:py-4 mt-2 lg:mt-6 rounded-full hover:bg-gray-800 transition">
+      More About Us
+    </button>
+  </div>
+
+</div>
+
+
+<div class="flex flex-col lg:flex-row lg:space-x-4 space-y-6 lg:space-y-0 pt-16 bg-white">
+
+  <!-- Card 1 -->
+  <div class="flex-1 rounded-xl shadow-lg shadow-[#00000040] p-6 sm:p-8 border hover:shadow-lg hover:shadow-gray-300 transition">
+    <div class="flex items-center space-x-3 pb-3">
+      <div><img src="./assets/img/topic 1.png" alt=""></div>
+      <h2 class="font-semibold text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl 2xl:text-4xl text-[#1E1E1E]">
+        Trending Topics
+      </h2>
+    </div>
+    <p class="mt-2 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-3xl font-normal text-[#1E1E1E]">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus
+    </p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="flex-1 rounded-xl shadow-lg shadow-[#00000040] p-6 sm:p-8 border hover:shadow-lg hover:shadow-gray-300 transition">
+    <div class="flex items-center space-x-3 pb-3">
+      <div><img src="./assets/img/drum 1.png" alt=""></div>
+      <h2 class="font-semibold text-lg sm:text-xl md:text-2xl llg:text-lg xl:text-xl 2xl:text-4xl text-[#1E1E1E]">
+        Pop-Culture
+      </h2>
+    </div>
+    <p class="mt-2 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-3xl font-normal text-[#1E1E1E]">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus
+    </p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="flex-1 rounded-xl shadow-lg shadow-[#00000040] p-6 sm:p-8 border hover:shadow-lg hover:shadow-gray-300 transition">
+    <div class="flex items-center space-x-3 pb-3">
+      <div><img src="./assets/img/stand-up 1.png" alt=""></div>
+      <h2 class="font-semibold text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl 2xl:text-4xl text-[#1E1E1E]">
+        Comedy & Fun
+      </h2>
+    </div>
+    <p class="mt-2 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-3xl font-normal text-[#1E1E1E]">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus
+    </p>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="flex-1 rounded-xl shadow-lg shadow-[#00000040] p-6 sm:p-8 border hover:shadow-lg hover:shadow-gray-300 transition">
+    <div class="flex items-center space-x-3 pb-3">
+      <div><img src="./assets/img/dumbbell 1.png" alt=""></div>
+      <h2 class="font-semibold text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl 2xl:text-4xl text-[#1E1E1E]">
+        Health and Sport
+      </h2>
+    </div>
+    <p class="mt-2 text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-3xl font-normal text-[#1E1E1E]">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus
+    </p>
+  </div>
+
+</div>
+
+
+
+</section>
+
+<section class="bg-[#E9EBED] w-full 2xl:mt-28 mt-20">
+  <div class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-12 xl:py-20 py-10">
+    
+    <!-- 🔹 Section Heading -->
+    <div class="text-center">
+      <!-- Small Heading -->
+      <h4 class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium text-[#848383] 2xl:pb-10 pb-6">
+        About Pods
+      </h4>
+
+      <!-- Main Heading -->
+      <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-semibold text-[#1E1E1E] 
+                 leading-snug sm:leading-[28px] md:leading-[36px] lg:leading-[44px] xl:leading-[56px] 2xl:leading-[70px] text-center">
+        Hit Parade: The Best Beats <br class="hidden sm:block"> All Week!
+      </h2>
+
+      <!-- Paragraph -->
+      <div class="flex justify-center items-center text-center pt-6 sm:pt-8 md:pt-10 pb-6 sm:pb-8 md:pb-10">
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-normal text-[#1E1E1E]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id ante eu purus 
+          <br class="hidden lg:block xl:block 2xl:block">
+          luctus viverra id vitae augue.
+        </p>
+      </div>
+    </div>
+
+    <!-- 🔹 First Row -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="w-full rounded-xl overflow-hidden">
+        <img src="./assets/img/about (1).png" alt="Podcast" class="w-full object-cover">
+      </div>
+
+      <!-- Card 2 -->
+       <div class="w-full rounded-xl overflow-hidden">
+        <img src="./assets/img/Group 34.png" alt="Podcast" class="w-full object-cover">
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-full rounded-xl overflow-hidden">
+        <img src="./assets/img/about (2).png" alt="Podcast" class="w-full object-cover">
+      </div>
+
+      <!-- Card 4 -->
+    <div class="w-full rounded-xl overflow-hidden">
+        <img src="./assets/img/Group 35.png" alt="Podcast" class="w-full object-cover">
+      </div>
+    </div>
+
+    <!-- 🔹 Second Row -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+
+      <!-- Card 1 -->
+       <div class="w-full rounded-xl overflow-hidden">
+        <img src="./assets/img/Group 36.png" alt="Podcast" class="w-full object-cover">
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-full rounded-xl overflow-hidden">
+        <img src="./assets/img/about (7).png" alt="Podcast" class="w-full object-cover">
+      </div>
+
+      <!-- Card 3 -->
+       <div class="w-full rounded-xl overflow-hidden">
+        <img src="./assets/img/Group 37.png" alt="Podcast" class="w-full object-cover">
+      </div>
+
+      <!-- Card 4 -->
+      <div class="w-full rounded-xl overflow-hidden">
+        <img src="./assets/img/Rectangle 46.png" alt="Podcast" class="w-full object-cover">
+      </div>
+    </div>
+
+
+
+      <div class="bg-[#1E1E1E] rounded-3xl 2xl:mt-20 mt-16">
+  
+    <div class="w-full 2xl:px-20 px-4 sm:px-6 md:px-8 lg:px-10 flex flex-col lg:flex-row items-center lg:items-start">
+      
+      <!-- ✅ Left Content -->
+      <div class="w-full lg:w-3/5 space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 py-5 2xl:pt-10 2xl:pb-10 text-center lg:text-left px-10 ">
+        
+        <!-- Heading -->
+        <div>
+          <strong class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[72px] leading-tight lg:leading-[56px] text-white">
+            What Do You Want to <br class="hidden 2xl:block sm:hidden"/>
+             Hear Today? 
+             
+            Subscribe For The Latest Episodes
+          </strong> 
+        </div>
+
+        <!-- Paragraph -->
+        <div class="text-white">
+          <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal leading-5 sm:leading-6 md:leading-7 lg:leading-8 pb-4 sm:pb-6 md:pb-8">
+            Integer aliquam ligula in elit ullamcorper, vel tempor sapien 
+            <br class="hidden md:block"> auctor.
+          </p>
+        </div>
+
+ <!-- Input + Button wrapper -->
+      <div class="flex w-full sm:flex-row flex-col items-center py-2 px-3 sm:px-4 gap-3 sm:gap-0 border border-white rounded-lg">
+        <!-- Input -->
+        <input type="email" 
+               placeholder="ENTER" 
+               class="flex-1 px-3 sm:px-4 py-3 sm:py-5 bg-transparent 
+                      text-white placeholder-[#999999] focus:outline-none 
+                      text-sm sm:text-base">
+
+        <!-- Button -->
+        <button class="w-full sm:w-auto px-8 sm:px-8 py-2 sm:py-3 
+                       bg-white rounded-xl text-black font-semibold 
+                       hover:bg-sky-500 hover:text-black transition 
+                        sm:ml-3 text-base xl:text-xl 2xl:text-2xl hover:animate-pulse">
+          SUBSCRIBE
+        </button>
+      </div>
+
+
+
+      </div>
+      
+      <!-- ✅ Right Image -->
+      <div class="w-full lg:w-2/5 flex justify-center mt-8 lg:mt-0">
+        <div class="max-w-[220px] sm:max-w-[280px] md:max-w-[340px] lg:max-w-full">
+          <img class="w-full" src="./assets/img/42MXTRK 1.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="w-full flex flex-col lg:flex-row gap-8 2xl:mt-20 mt-16">
+    
+
+
+<!-- Image Column -->
+<div class="w-full lg:w-1/3 relative flex justify-end">
+  <div class="bg-[#1E1E1E] px-5 py-10 rounded-3xl absolute 
+              2xl:top-32 2xl:-left-2 xl:top-32 xl:-left-2 lg:top-32 lg:-left-2 md:-top-10 md:left-64 -top-10 left-32 
+              hidden sm:block">
+    <h3 class="font-bold text-white 
+               text-xl sm:text-2xl md:text-3xl lg:text-xl xl:text-2xl 2xl:text-6xl leading-snug">
+      Our <br>Subscriber<br> 17.5 M
+    </h3>
+  </div>
+
+  <img src="./assets/img/Rectangle 50.png" 
+       alt="" 
+       class="2xl:w-[435px] 2xl:h-[520px] xl:w-[335px] xl:h-[420px] lg:w-[235px] lg:h-[380px] w-full h-auto rounded-lg">
+</div>
+
+
+
+
+        <!-- Text Column -->
+    <div class="w-full lg:w-1/3 space-y-10">
+      
+      <!-- Small Heading -->
+      <div>
+        <h4 class="text-[#848383] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium">
+          Why Choose Us?
+        </h4>
+      </div>
+
+      <!-- Main Heading -->
+      <div>
+        <h3 class="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold 
+                   leading-6 sm:leading-7 md:leading-8 lg:leading-10 2xl:leading-[60px] text-[#1E1E1E]">
+       Your Ultimate Sound Destination
+        </h3>
+      </div>
+
+      <!-- Paragraph -->
+      <div>
+        <p class="text-[#1E1E1E] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-normal 
+                   leading-5 sm:leading-6 md:leading-7 lg:leading-8 2xl:leading-9 pb-6">
+         Embark on a journey with us at Pods, where every episode promises to captivate, inspire, and empower. Curious why our podcast is a must-listen? Here are four compelling reasons to tune in.
+        </p>
+      </div>
+    </div>
+<!-- FAQ Column -->
+<div class="w-full lg:w-1/3 px-2">
+  <div class="space-y-4">
+    
+    <!-- FAQ Item -->
+    <div class="hover:bg-[#1E1E1E] hover:text-white text-black border-[2px] border-[#1E1E1E] rounded-lg">
+      <button class="faq-toggle w-full flex justify-between items-center p-3 sm:p-4 text-left font-medium text-base sm:text-lg md:text-xl lg:text-lg">
+        Inspirational Insight
+        <span class="icon text-xl font-bold">
+          <span class="plus">+</span>
+          <span class="minus hidden">−</span>
+        </span>
+      </button>
+      <div class="faq-content px-3 sm:px-4 pb-4 text-sm sm:text-base md:text-lg leading-6 text-[#1E1E1E] bg-white hidden pt-6">
+        Our podcast delivers inspirational insights from industry experts and thought leaders, 
+        providing listeners with valuable knowledge and motivation to pursue their goals and dreams.
+      </div>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="hover:bg-[#1E1E1E] hover:text-white text-black border-[2px] border-[#1E1E1E] rounded-lg">
+      <button class="faq-toggle w-full flex justify-between items-center p-3 sm:p-4 text-left font-medium text-base sm:text-lg md:text-xl lg:text-lg">
+        Engaging Presenters
+        <span class="icon text-xl font-bold">
+          <span class="plus">+</span>
+          <span class="minus hidden">−</span>
+        </span>
+      </button>
+      <div class="faq-content px-3 sm:px-4 pb-4 text-sm sm:text-base md:text-lg leading-6 text-[#1E1E1E] bg-white hidden pt-6">
+        Our presenters are engaging, knowledgeable, and passionate, keeping the audience inspired and entertained.
+      </div>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="hover:bg-[#1E1E1E] hover:text-white text-black border-[2px] border-[#1E1E1E] rounded-lg">
+      <button class="faq-toggle w-full flex justify-between items-center p-3 sm:p-4 text-left font-medium text-base sm:text-lg md:text-xl lg:text-lg">
+        Stay Updated
+        <span class="icon text-xl font-bold">
+          <span class="plus">+</span>
+          <span class="minus hidden">−</span>
+        </span>
+      </button>
+      <div class="faq-content px-3 sm:px-4 pb-4 text-sm sm:text-base md:text-lg leading-6 text-[#1E1E1E] bg-white hidden pt-6">
+        Stay updated with the latest episodes, trends, and insights delivered directly to you.
+      </div>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="hover:bg-[#1E1E1E] hover:text-white text-black border-[2px] border-[#1E1E1E] rounded-lg">
+      <button class="faq-toggle w-full flex justify-between items-center p-3 sm:p-4 text-left font-medium text-base sm:text-lg md:text-xl lg:text-lg">
+        Community and Connection
+        <span class="icon text-xl font-bold">
+          <span class="plus">+</span>
+          <span class="minus hidden">−</span>
+        </span>
+      </button>
+      <div class="faq-content px-3 sm:px-4 pb-4 text-sm sm:text-base md:text-lg leading-6 text-[#1E1E1E] bg-white hidden pt-6">
+        Join a growing community of like-minded individuals and connect with people who share your goals and passions.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+  </div>
+</section>
+
+<section class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-20  pt-20 pb-20">
+<div class="w-full grid gap-5 items-start 
+            grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center lg:text-left">
+
+  <!-- Card 1 -->
+  <div class="w-full">
+    <div class="w-full">
+      <img src="./assets/img/Rectangle 20.png" class="w-full" alt="">
+    </div>
+    <div class="p-6">
+      <h4 class="text-[#1E1E1E] text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium pb-2">
+        Jaxon Kingslay
+      </h4>
+      <p class="text-[#1E1E1E] text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
+        Professional Host
+      </p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="w-full">
+    <div class="w-full">
+      <img src="./assets/img/Rectangle 19.png" class="w-full" alt="">
+    </div>
+    <div class="p-6">
+      <h4 class="text-[#1E1E1E] text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium pb-2">
+        Jaxon Kingslay
+      </h4>
+      <p class="text-[#1E1E1E] text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
+        Professional Host
+      </p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="w-full">
+    <div class="w-full">
+      <img src="./assets/img/Rectangle 19 (1).png" class="w-full" alt="">
+    </div>
+    <div class="p-6">
+      <h4 class="text-[#1E1E1E] text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium pb-2">
+        Jaxon Kingslay
+      </h4>
+      <p class="text-[#1E1E1E] text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
+        Professional Host
+      </p>
+    </div>
+  </div>
+
+  <!-- Text Column -->
+  <div class="w-full 2xl:space-y-10 xl:space-y-6 space-y-4 lg:space-y-0 text-center lg:text-left">
+    <!-- Small Heading -->
+    <div>
+      <h4 class="text-[#848383] text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
+        Meet Our Pods Squad
+      </h4>
+    </div>
+
+    <!-- Main Heading -->
+    <div>
+      <h3 class="text-lg sm:text-2xl md:text-4xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold leading-[40px] sm:leading-[50px] md:leading-[60px] lg:leading-[48px] 2xl:leading-[67px] text-[#1E1E1E]">
+        United Voices, Limitless Stories
+      </h3>
+    </div>
+
+    <!-- Paragraph -->
+    <div>
+      <p class="text-[#1E1E1E] text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-normal leading-6 sm:leading-7 md:leading-8 2xl:leading-9 pb-9">
+        Integer aliquam ligula in elit ullamcorper, vel tempor sapien auctor. Fusce feugiat et diam id mollis. Pellentesque blandit odio ac leo.
+      </p>
+    </div>
+
+    <!-- Button -->
+    <div>
+      <a href="#"
+        class="px-12 py-3 lg:py-4 rounded-full bg-[#1E1E1E] text-white hover:bg-sky-500 transition 
+        font-bold text-sm sm:text-base md:text-lg xl:text-lg 2xl:text-xl inline-block">
+        View More
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+</section>
+
+<!-- <section>
+  <div class="w-full flex items-center justify-center absolute  2xl:top-20  xl:top-36 lg:top-10 top-7 px-6 xl:px-0">
+    <div class="w-full 2xl:max-w-[1600px] xl:max-w-[1180px] bg-white rounded-[36px] py-6 sm:py-10 px-4 sm:px-8 ">
+      
+     
+      <div class="text-xl sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold text-[#1E1E1E] text-center">
+        <h2>
+          <strong> Accelerate Your Impact,<br> Become a Sponsor!</strong>
+        </h2>
+      </div>
+    <div class="text-center pt-10 font-normal text-[#1E1E1E]">
+  <p class="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-4xl leading-relaxed sm:leading-7 md:leading-8 lg:leading-9 xl:leading-10 2xl:leading-[43px]">
+    Attention forward-thinking brands! Elevate your reach and impact by sponsoring our
+    <br class="hidden 2xl:block xl:block"> dynamic radio station & podcast platform. Join us in shaping the future of content!
+  </p>
+</div>
+
+      
+      <div class="flex items-center justify-center">
+        <button type="submit"
+          class="bg-[#1E1E1E] text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl font-bold text-white px-6 sm:px-8 py-3 sm:py-4 mt-6 rounded-full hover:bg-gray-800 transition">
+          Send Message
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+
+
+<footer class="bg-[#1E1E1E] w-full  relative">
+    <div class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-48 xl:pt-40 xl:pb-10 py-10 ">
+     <div class="w-full flex flex-col lg:flex-row lg:justify-between gap-10">
+
+   <!-- Left Section (Logo + Text + Social Icons) -->
+<div class="lg:w-1/2 space-y-10 text-center lg:text-left flex flex-col items-center lg:items-start"> <!-- Center small, left large -->
+  
+  <!-- Logo -->
+  <div class="flex items-center justify-center lg:justify-start space-x-3 mb-4">
+    <img src="./assets/img/Mask group.png" alt="Logo" 
+       >
+  </div>
+
+  <p class="text-base sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-4xl text-white leading-relaxed lg:leading-7 xl:leading-10">
+    Potshow is a full-featured Elementor Template Kit created to help you
+    set up and manage your Radio Station & Podcast website in no time.
+  </p>
+
+  <!-- Social Section -->
+  <div class="mt-6">
+    <p class="text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl font-medium text-white tracking-wide mb-3">
+      Listen & Subscribe On :
+    </p>
+    <div class="flex flex-wrap justify-center lg:justify-start items-center gap-4">
+      <img src="./assets/img/Mask group (1).png" alt="Spotify" class="">
+      <img src="./assets/img/Mask group (2).png" alt="Apple" class="">
+      <img src="./assets/img/Mask group (3).png" alt="Soundcloud" class="">
+      <img src="./assets/img/Mask group (4).png"  alt="Google Podcast" class="">
+    </div>
+  </div>
+</div>
+
+
+    <!-- Right Section (3 Columns) -->
+    <div class="flex flex-1 justify-between lg:w-1/2"> <!-- 60% width -->
+      
+      <!-- Column 1 -->
+      <div class="w-1/3"> <!-- 20% overall -->
+        <h3 class="text-lg sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl font-bold text-white mb-4 text-center pb-10">Page List</h3>
+        <ul class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-white text-center ">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Podcast</a></li>
+          <li><a href="#" class="hover:text-white">Programs</a></li>
+          <li><a href="#" class="hover:text-white">Our Team</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="w-1/3"> <!-- 20% overall -->
+        <h3 class="text-lg sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl font-bold text-white mb-4 text-center pb-10">Page List</h3>
+        <ul class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-white text-center ">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Podcast</a></li>
+          <li><a href="#" class="hover:text-white">Programs</a></li>
+          <li><a href="#" class="hover:text-white">Our Team</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="w-1/3"> <!-- 20% overall -->
+        <h3 class="text-lg sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl font-bold text-white mb-4 text-center pb-10">Page List</h3>
+        <ul class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-white text-center ">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Podcast</a></li>
+          <li><a href="#" class="hover:text-white">Programs</a></li>
+          <li><a href="#" class="hover:text-white">Our Team</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Border -->
+  <div class="border-t border-white mt-8"></div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!-- ✅ Accordion JS -->
+<script>
+document.querySelectorAll(".faq-toggle").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+    const plus = btn.querySelector(".plus");
+    const minus = btn.querySelector(".minus");
+
+    content.classList.toggle("hidden");
+
+    if (content.classList.contains("hidden")) {
+      // Band hoga to plus show
+      plus.classList.remove("hidden");
+      minus.classList.add("hidden");
+    } else {
+      // Open hoga to minus show
+      plus.classList.add("hidden");
+      minus.classList.remove("hidden");
+    }
+  });
+});
+
+</script>
+
+<!-- ✅ JS for Toggle -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+</body>
+</html>

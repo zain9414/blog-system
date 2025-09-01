@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+    <!-- ✅ Responsive Navbar -->
+
+<nav class=" w-full">
+  <div class="w-full px-4 sm:px-6 2xl:px-20 xl:px-20 lg:px-10 py-4 sm:py-6 lg:py-16">
+    <div class="flex justify-between items-center flex-wrap">
+      
+      <!-- 🔹 Left: Logo -->
+      <div class="flex-shrink-0">
+        <img class="2xl:w-72 2xl:h-16 w-48 h-10" 
+             src="./assets/img/Logo-Pods1b 1.png" 
+             alt="Logo">
+      </div>
+
+      <!-- 🔹 Toggle Button (Mobile + Tablet) -->
+      <div class="lg:hidden ml-auto">
+        <button id="menu-btn" class="text-black focus:outline-none">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- 🔹 Center: Links (Desktop Only) -->
+      <div class="hidden lg:flex flex-wrap justify-center font-bold 
+                  text-base 2xl:text-xl xl:text-sm
+                  gap-x-4 sm:gap-x-6 lg:gap-x-10 xl:gap-x-12 gap-y-3 flex-1">
+        <a href="./index.html" class="text-black hover:text-sky-500">Home</a>
+        <a href="./About.html" class="text-black hover:text-sky-500">About Us</a>
+        <a href="./Podcast.html" class="text-black hover:text-sky-500">Podcast</a>
+        <a href="./Program.html" class="text-black hover:text-sky-500">Program</a>
+        <a href="./blog.html" class="text-black hover:text-sky-500">Pages</a>
+        <a href="./Contact.html" class="text-black hover:text-sky-500">Contact</a>
+      </div>
+
+      <!-- 🔹 Right: Button (Desktop Only) -->
+      <div class="hidden lg:block ml-auto">
+        <a href="./multi-blog.html"
+           class="px-12 py-3 lg:py-4 rounded-full bg-black text-white hover:bg-sky-500 transition 
+           font-bold text-base 2xl:text-xl xl:text-sm">
+        Donated
+        </a>
+      </div>
+
+    </div>
+
+    <!-- 🔹 Mobile/Tablet Menu -->
+    <div id="menu" class="hidden lg:hidden mt-6 space-y-6 font-bold text-base bg-black/70 p-6 rounded-xl">
+      <a href="./index.html" class="block text-white hover:text-[#00FF9C]">Home</a>
+      <a href="./About.html" class="block text-white hover:text-[#00FF9C]">About Us</a>
+      <a href="./Podcast.html" class="block text-white hover:text-[#00FF9C]">Podcast</a>
+      <a href="./Program.html" class="block text-white hover:text-[#00FF9C]">Program</a>
+      <a href="./blog.html" class="block text-white hover:text-[#00FF9C]">Pages</a>
+       <a href="./Contact.html" class="block text-white hover:text-[#00FF9C]">Contact</a>
+      <a href="./multi-blog.html"
+         class="block w-full text-center px-4 py-3 rounded-lg bg-white text-black hover:bg-sky-500 transition font-bold">
+        Donated
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- 🚀 Hero Section -->
+<section class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 ">
+  <div class="relative bg-cover w-full bg-center bg-no-repeat rounded-[31px] 
+              2xl:py-20 2xl:px-28 xl:py-10 py-10" 
+       style="background-image: url(./assets/img/Rectangle\ 68.png);">
+    
+    <!-- 🔹 Overlay -->
+    <div class="absolute inset-0 bg-black/50 rounded-[31px]"></div>
+    
+    <div class="relative flex justify-center items-center w-full">
+      <div class="w-full text-center">
+          
+        <!-- Main Heading -->
+        <div>
+          <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl 
+                     xl:text-[90px] 2xl:text-[128px] font-bold 
+                     text-white leading-snug sm:leading-tight md:leading-[80px] 
+                     xl:leading-[100px] 2xl:leading-[119px] pb-6 sm:pb-10">
+         Blog
+          </h1>
+        </div>
+        
+        <!-- Paragraph -->
+        <div>
+          <p class="text-base sm:text-lg md:text-xl lg:text-2xl 
+                     xl:text-3xl font-normal  text-white">
+            Home-Blog
+          </p>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+
+
+
+
+<section class="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 pt-12 sm:pt-16 md:pt-20 2xl:pt-24">
+      
+      <!-- 🔹 Section Heading -->
+    <div class="text-center">
+      <!-- Small Heading -->
+      <h4 class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium text-[#848383] 2xl:pb-10 pb-6">
+       Our Blog List
+      </h4>
+
+      <!-- Main Heading -->
+      <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-semibold text-[#1E1E1E] 
+                 leading-snug sm:leading-[28px] md:leading-[36px] lg:leading-[44px] xl:leading-[56px] 2xl:leading-[70px] text-center">
+       Discover Tips, Trends & Strategies
+      </h2>
+
+      <!-- Paragraph -->
+      <div class="flex justify-center items-center text-center pt-6 sm:pt-8 md:pt-10 pb-6 sm:pb-8 md:pb-10">
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-normal text-[#1E1E1E]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id ante eu purus 
+          <br class="hidden lg:block xl:block 2xl:block">
+          luctus viverra id vitae augue.
+
+        </p>
+      </div>
+    </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+
+  <!-- Card 1 -->
+  <div class="bg-[#E9EBED] rounded-xl shadow-md overflow-hidden ">
+    <img src="./assets/img/Rectangle 71.png" alt="Podcast Image" class="w-full object-cover">
+    <div class="p-4 space-y-10">
+      <!-- Author + Date -->
+      <div class="flex justify-between items-center text-black mb-2 pt-5">
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-lg 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-user"></i>
+          Akhol Jabir
+        </h2>
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-lg 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-calendar-days"></i>
+          8/30/2025
+        </h2>
+      </div>
+
+      <!-- Title -->
+      <h3 class="font-semibold text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl 2xl:text-3xl text-black mb-2">
+        Podcast Spotlight: Voice Changing the Game
+      </h3>
+
+      <!-- Description -->
+      <p class="text-sm sm:text-base md:text-lg lg:text-sm  2xl:text-xl xl:text-lg text-black mb-3 font-normal pb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante augue, cursus in nisl quis, ornare posuere turpis. Etiam scelerisque magna in pulvinar semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus…
+      </p>
+
+      <!-- Read More -->
+      <a href="#" class="text-base sm:text-lg md:text-lg lg:text-2xl font-bold text-black hover:underline">
+        Read More..
+      </a>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="bg-[#E9EBED] rounded-xl shadow-md overflow-hidden ">
+    <img src="./assets/img/Rectangle 71 (1).png" alt="Podcast Image" class="w-full object-cover">
+    <div class="p-4 space-y-10">
+      <div class="flex justify-between items-center text-black mb-2 pt-5">
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-lg 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-user"></i>
+          Akhol Jabir
+        </h2>
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-lg 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-calendar-days"></i>
+          8/30/2025
+        </h2>
+      </div>
+      <h3 class="font-semibold text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl 2xl:text-3xl text-black mb-2">
+        Podcast Spotlight: Voice Changing the Game
+      </h3>
+      <p class="text-sm sm:text-base md:text-lg lg:text-sm  2xl:text-xl xl:text-lg text-black mb-3 font-normal pb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante augue, cursus in nisl quis, ornare posuere turpis. Etiam scelerisque magna in pulvinar semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus…
+      </p>
+      <a href="#" class="text-base sm:text-lg md:text-lg lg:text-2xl font-bold text-black hover:underline">
+        Read More..
+      </a>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="bg-[#E9EBED] rounded-xl shadow-md overflow-hidden ">
+    <img src="./assets/img/Rectangle 71 (2).png" alt="Podcast Image" class="w-full object-cover">
+    <div class="p-4 space-y-10">
+      <div class="flex justify-between items-center text-black mb-2 pt-5">
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-lg 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-user"></i>
+          Akhol Jabir
+        </h2>
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-lg 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-calendar-days"></i>
+          8/30/2025
+        </h2>
+      </div>
+      <h3 class="font-semibold text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl 2xl:text-3xl text-black mb-2">
+        Podcast Spotlight: Voice Changing the Game
+      </h3>
+      <p class="text-sm sm:text-base md:text-lg lg:text-sm  2xl:text-xl xl:text-lg text-black mb-3 font-normal pb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante augue, cursus in nisl quis, ornare posuere turpis. Etiam scelerisque magna in pulvinar semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus…
+      </p>
+      <a href="#" class="text-base sm:text-lg md:text-lg lg:text-2xl font-bold text-black hover:underline">
+        Read More..
+      </a>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="bg-[#E9EBED] rounded-xl shadow-md overflow-hidden ">
+    <img src="./assets/img/Rectangle 71 (3).png" alt="Podcast Image" class="w-full object-cover">
+    <div class="p-4 space-y-10">
+      <div class="flex justify-between items-center text-black mb-2 pt-5">
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-lg 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-user"></i>
+          Akhol Jabir
+        </h2>
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-lg 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-calendar-days"></i>
+          8/30/2025
+        </h2>
+      </div>
+      <h3 class="font-semibold text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl 2xl:text-3xl text-black mb-2">
+        Podcast Spotlight: Voice Changing the Game
+      </h3>
+      <p class="text-sm sm:text-base md:text-lg lg:text-sm  2xl:text-xl xl:text-lg text-black mb-3 font-normal pb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante augue, cursus in nisl quis, ornare posuere turpis. Etiam scelerisque magna in pulvinar semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus…
+      </p>
+      <a href="#" class="text-base sm:text-lg md:text-lg lg:text-2xl font-bold text-black hover:underline">
+        Read More..
+      </a>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="bg-[#E9EBED] rounded-xl shadow-md overflow-hidden ">
+    <img src="./assets/img/Rectangle 71 (4).png" alt="Podcast Image" class="w-full object-cover">
+    <div class="p-4 space-y-10">
+      <div class="flex justify-between items-center text-black mb-2 pt-5">
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-lg 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-user"></i>
+          Akhol Jabir
+        </h2>
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-lg 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-calendar-days"></i>
+          8/30/2025
+        </h2>
+      </div>
+      <h3 class="font-semibold text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl 2xl:text-3xl text-black mb-2">
+        Podcast Spotlight: Voice Changing the Game
+      </h3>
+      <p class="text-sm sm:text-base md:text-lg lg:text-sm  2xl:text-xl xl:text-lg text-black mb-3 font-normal pb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante augue, cursus in nisl quis, ornare posuere turpis. Etiam scelerisque magna in pulvinar semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus…
+      </p>
+      <a href="#" class="text-base sm:text-lg md:text-lg lg:text-2xl font-bold text-black hover:underline">
+        Read More..
+      </a>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="bg-[#E9EBED] rounded-xl shadow-md overflow-hidden ">
+    <img src="./assets/img/Rectangle 71 (5).png" alt="Podcast Image" class="w-full object-cover">
+    <div class="p-4 space-y-10">
+      <div class="flex justify-between items-center text-black mb-2 pt-5">
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-xl 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-user"></i>
+          Akhol Jabir
+        </h2>
+        <h2 class="flex items-center gap-2 text-base sm:text-lg md:text-xl 2xl:text-2xl xl:text-lg font-bold">
+          <i class="fa-regular fa-calendar-days"></i>
+          8/30/2025
+        </h2>
+      </div>
+      <h3 class="font-semibold text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl 2xl:text-3xl text-black mb-2">
+        Podcast Spotlight: Voice Changing the Game
+      </h3>
+      <p class="text-sm sm:text-base md:text-lg lg:text-sm  2xl:text-xl xl:text-lg text-black mb-3 font-normal pb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante augue, cursus in nisl quis, ornare posuere turpis. Etiam scelerisque magna in pulvinar semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus…
+      </p>
+      <a href="#" class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-black hover:underline">
+        Read More..
+      </a>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- <section>
+  <div class="w-full flex items-center justify-center absolute  2xl:top-20  xl:top-36 lg:top-10 top-7 px-6 xl:px-0">
+    <div class="w-full 2xl:max-w-[1600px] xl:max-w-[1180px] bg-white rounded-[36px] py-6 sm:py-10 px-4 sm:px-8 ">
+      
+     
+      <div class="text-xl sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold text-[#1E1E1E] text-center">
+        <h2>
+          <strong> Accelerate Your Impact,<br> Become a Sponsor!</strong>
+        </h2>
+      </div>
+    <div class="text-center pt-10 font-normal text-[#1E1E1E]">
+  <p class="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-4xl leading-relaxed sm:leading-7 md:leading-8 lg:leading-9 xl:leading-10 2xl:leading-[43px]">
+    Attention forward-thinking brands! Elevate your reach and impact by sponsoring our
+    <br class="hidden 2xl:block xl:block"> dynamic radio station & podcast platform. Join us in shaping the future of content!
+  </p>
+</div>
+
+      
+      <div class="flex items-center justify-center">
+        <button type="submit"
+          class="bg-[#1E1E1E] text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl font-bold text-white px-6 sm:px-8 py-3 sm:py-4 mt-6 rounded-full hover:bg-gray-800 transition">
+          Send Message
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+
+
+<footer class="bg-[#1E1E1E] w-full  relative">
+    <div class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-48 xl:pt-40 xl:pb-10 py-10 ">
+     <div class="w-full flex flex-col lg:flex-row lg:justify-between gap-10">
+
+   <!-- Left Section (Logo + Text + Social Icons) -->
+<div class="lg:w-1/2 space-y-10 text-center lg:text-left flex flex-col items-center lg:items-start"> <!-- Center small, left large -->
+  
+  <!-- Logo -->
+  <div class="flex items-center justify-center lg:justify-start space-x-3 mb-4">
+    <img src="./assets/img/Mask group.png" alt="Logo" 
+       >
+  </div>
+
+  <p class="text-base sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-4xl text-white leading-relaxed lg:leading-7 xl:leading-10">
+    Potshow is a full-featured Elementor Template Kit created to help you
+    set up and manage your Radio Station & Podcast website in no time.
+  </p>
+
+  <!-- Social Section -->
+  <div class="mt-6">
+    <p class="text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl font-medium text-white tracking-wide mb-3">
+      Listen & Subscribe On :
+    </p>
+    <div class="flex flex-wrap justify-center lg:justify-start items-center gap-4">
+      <img src="./assets/img/Mask group (1).png" alt="Spotify" class="">
+      <img src="./assets/img/Mask group (2).png" alt="Apple" class="">
+      <img src="./assets/img/Mask group (3).png" alt="Soundcloud" class="">
+      <img src="./assets/img/Mask group (4).png"  alt="Google Podcast" class="">
+    </div>
+  </div>
+</div>
+
+
+    <!-- Right Section (3 Columns) -->
+    <div class="flex flex-1 justify-between lg:w-1/2"> <!-- 60% width -->
+      
+      <!-- Column 1 -->
+      <div class="w-1/3"> <!-- 20% overall -->
+        <h3 class="text-lg sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl font-bold text-white mb-4 text-center pb-10">Page List</h3>
+        <ul class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-white text-center ">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Podcast</a></li>
+          <li><a href="#" class="hover:text-white">Programs</a></li>
+          <li><a href="#" class="hover:text-white">Our Team</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="w-1/3"> <!-- 20% overall -->
+        <h3 class="text-lg sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl font-bold text-white mb-4 text-center pb-10">Page List</h3>
+        <ul class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-white text-center ">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Podcast</a></li>
+          <li><a href="#" class="hover:text-white">Programs</a></li>
+          <li><a href="#" class="hover:text-white">Our Team</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="w-1/3"> <!-- 20% overall -->
+        <h3 class="text-lg sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl font-bold text-white mb-4 text-center pb-10">Page List</h3>
+        <ul class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-white text-center ">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Podcast</a></li>
+          <li><a href="#" class="hover:text-white">Programs</a></li>
+          <li><a href="#" class="hover:text-white">Our Team</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Border -->
+  <div class="border-t border-white mt-8"></div>
+    </div>
+</footer>
+
+
+
+
+<!-- ✅ JS for Toggle -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
