@@ -8,6 +8,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -114,7 +116,7 @@
 
 
 
-<section class="bg-white w-full  2xl:pb-60 xl:pb-32 lg:pb-48 md:pb-48 pb-32 relative">
+<section class="bg-white w-full  relative 2xl:pb-72 xl:pb-72 lg:pb-80 md:pb-72 pb-44">
     <div class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-32 pt-20 xl:py-20 py-10 ">
       <div class="w-full flex flex-col md:flex-row flex-wrap">
 
@@ -246,41 +248,21 @@
     
     </div>
 
+          <!-- ✅ Sponsor CTA (Box reused) -->
+  <div class=" py-12 absolute z-50  w-full   2xl:max-w-[1700px] 2xl:left-28 2xl:-bottom-60 xl:max-w-[1200px] xl:left-20 xl:-bottom-44 lg:max-w-[800px] lg:left-32 lg:-bottom-48 md:max-w-[650px] md:left-16 md:-bottom-48 sm:max-w-[300px] sm:left-16 sm:-bottom-32  px-5">
+     
+    <div class="flex items-center justify-center gap-3 w-full h-full">
+    <div id="basic-leaflet" class="h-[400px] w-full rounded-lg "></div>
+</div>
+  </div>
     </section>
 
 
-<!-- <section>
-  <div class="w-full flex items-center justify-center   px-6 xl:px-0">
-    <div class="w-full 2xl:max-w-[1600px] xl:max-w-[1180px] bg-white rounded-[36px] py-6 sm:py-10 px-4 sm:px-8 ">
-      
-     
-      <div class="text-xl sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold text-[#1E1E1E] text-center">
-        <h2>
-          <strong> Accelerate Your Impact,<br> Become a Sponsor!</strong>
-        </h2>
-      </div>
-    <div class="text-center pt-10 font-normal text-[#1E1E1E]">
-  <p class="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-4xl leading-relaxed sm:leading-7 md:leading-8 lg:leading-9 xl:leading-10 2xl:leading-[43px]">
-    Attention forward-thinking brands! Elevate your reach and impact by sponsoring our
-    <br class="hidden 2xl:block xl:block"> dynamic radio station & podcast platform. Join us in shaping the future of content!
-  </p>
-</div>
 
-      
-      <div class="flex items-center justify-center">
-        <button type="submit"
-          class="bg-[#1E1E1E] text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl font-bold text-white px-6 sm:px-8 py-3 sm:py-4 mt-6 rounded-full hover:bg-gray-800 transition">
-          Send Message
-        </button>
-      </div>
-
-    </div>
-  </div>
-</section> -->
 
 
 <footer class="bg-[#1E1E1E] w-full  relative">
-    <div class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-60 xl:pt-40  xl:pb-10 py-10  lg:pt-48 md:pt-48 ">
+    <div class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-60 xl:pt-40  xl:pb-10 py-10  lg:pt-48 md:pt-48 pt-72">
      <div class="w-full flex flex-col lg:flex-row lg:justify-between gap-10">
 
    <!-- Left Section (Logo + Text + Social Icons) -->
@@ -365,6 +347,28 @@
 
 
 
+<script>
+    window.addEventListener('load', () => {
+        (function () {
+            const map = L.map('basic-leaflet', {
+                center: [51.5074, -0.1278],
+                zoom: 14,
+                // Prevent dragging over the limit
+                maxBounds: [
+                    [40, -10],
+                    [60, 10]
+                ],
+                maxBoundsViscosity: 1.0
+            });
+
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                minZoom: 2,
+                attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+        })();
+    });
+</script>
 
 <!-- ✅ JS for Toggle -->
 <script>
