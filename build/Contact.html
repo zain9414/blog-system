@@ -12,7 +12,7 @@
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <title>Document</title>
 </head>
-<body>
+<body class="dark:bg-black ">
     <!-- ✅ Responsive Navbar -->
 
 
@@ -21,7 +21,7 @@
     <div class="flex justify-between items-center flex-wrap">
       
       <!-- 🔹 Left: Logo -->
-      <div class="flex-shrink-0">
+      <div class="flex-shrink-0 ">
         <img class="2xl:w-72 2xl:h-16 w-48 h-10" 
              src="./assets/img/Logo-Pods1b 1.png" 
              alt="Logo">
@@ -40,41 +40,73 @@
       <!-- 🔹 Center: Links (Desktop Only) -->
       <div class="hidden lg:flex flex-wrap justify-center font-bold 
                   text-base 2xl:text-xl xl:text-sm
-                  gap-x-4 sm:gap-x-6 lg:gap-x-10 xl:gap-x-12 gap-y-3 flex-1">
-        <a href="./index.html" class="text-black">Home</a>
-        <a href="./About.html" class="text-black">About Us</a>
-        <a href="./Podcast.html" class="text-black">Podcast</a>
-        <a href="./Program.html" class="text-black">Program</a>
-        <a href="./blog.html" class="text-black">Pages</a>
-        <a href="./Contact.html" class="text-black">Contact</a>
+                  gap-x-4 sm:gap-x-6 lg:gap-x-10 xl:gap-x-12 gap-y-3 flex-1 ">
+        <a href="./index.html" class="text-black dark:text-white">Home</a>
+        <a href="./About.html" class="text-black dark:text-white">About Us</a>
+        <a href="./Podcast.html" class="text-black dark:text-white">Podcast</a>
+        <a href="./Program.html" class="text-black dark:text-white">Program</a>
+        <a href="./blog.html" class="text-black dark:text-white">Pages</a>
+        <a href="./Contact.html" class="text-black dark:text-white">Contact</a>
       </div>
 
       <!-- 🔹 Right: Button (Desktop Only) -->
-      <div class="hidden lg:block ml-auto">
+      <div class="hidden lg:block  mx-5">
         <a href="./multi-blog.html"
            class="px-12 py-3 lg:py-4 rounded-full bg-[#1E1E1E] text-white hover:bg-white
             hover:border border-black hover:text-black transition 
-           font-bold text-base 2xl:text-xl xl:text-sm">
+           font-bold text-base 2xl:text-xl xl:text-sm dark:text-black dark:bg-white dark:hover:bg-black dark:hover:text-white dark:hover:border-white">
         Donated
         </a>
+        
       </div>
 
+
+      <!-- Toggle Button -->
+<button id="darkToggle" 
+  class=" right-4 p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-md transition">
+  <!-- Light Mode Icon (Sun) -->
+  <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" 
+       class="h-6 w-6 text-yellow-500 dark:hidden" fill="none" 
+       viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+          d="M12 3v1m0 16v1m8.66-12.66l-.71.71M4.05 19.95l.71-.71M21 12h-1M4 12H3m16.95 7.95l-.71-.71M6.34 6.34l-.71-.71M12 5a7 7 0 100 14a7 7 0 000-14z" />
+  </svg>
+
+  <!-- Dark Mode Icon (Moon) -->
+  <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" 
+       class="h-6 w-6 text-white hidden dark:block" fill="currentColor" 
+       viewBox="0 0 24 24">
+    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+  </svg>
+</button>
+      
+
+
+
     </div>
 
-    <!-- 🔹 Mobile/Tablet Menu -->
-    <div id="menu" class="hidden lg:hidden mt-6 space-y-6 font-bold text-base bg-black/70 p-6 rounded-xl">
-      <a href="./index.html" class="block text-white ">Home</a>
-      <a href="./About.html" class="block text-white ">About Us</a>
-      <a href="./Podcast.html" class="block text-white ">Podcast</a>
-      <a href="./Program.html" class="block text-white ">Program</a>
-      <a href="./blog.html" class="block text-white ">Pages</a>
-       <a href="./Contact.html" class="block text-white ">Contact</a>
-      <a href="./multi-blog.html"
-         class="block w-full text-center px-4 py-3 rounded-lg bg-white text-[black] hover:bg-white  hover:text-black transition font-bold">
-        Donated
-      </a>
-    </div>
+   <!-- 🔹 Mobile/Tablet Menu -->
+<div id="menu" class="hidden lg:hidden mt-6 space-y-6 font-bold text-base bg-black/70 p-6 rounded-xl">
+  <a href="./index.html" class="block text-white">Home</a>
+  <a href="./About.html" class="block text-white">About Us</a>
+  <a href="./Podcast.html" class="block text-white">Podcast</a>
+  <a href="./Program.html" class="block text-white">Program</a>
+  <a href="./blog.html" class="block text-white">Pages</a>
+  <a href="./Contact.html" class="block text-white">Contact</a>
+
+  <!-- ✅ Donated Button -->
+  <a href="./multi-blog.html"
+     class="block w-full text-center px-4 py-3 rounded-lg 
+            bg-white text-black 
+            hover:bg-gray-200 hover:text-black 
+            transition font-bold 
+            dark:bg-white dark:text-black dark:hover:bg-gray-200">
+    Donated
+  </a>
+</div>
+
   </div>
+  
 </nav>
 
 
@@ -388,6 +420,14 @@
   const menu = document.getElementById('menu');
   btn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
+  });
+</script>
+
+<!-- dark mood -->
+<script>
+  const toggle = document.getElementById('darkToggle');
+  toggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
   });
 </script>
 </body>
