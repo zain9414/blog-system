@@ -75,22 +75,22 @@
   </div>
 </nav>
 
-<section class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-5 pt-0">
-    <!-- Heading -->
+
+
+
+<section class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-5 pt-0 ">
+
   <div class="flex justify-center items-center w-full 2xl:text-start 2xl:pl-44 text-center">
-    <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[125px] font-bold">
+    <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-5xl 2xl:text-[125px] font-bold">
       Podcast Spotlight: Voices Changing the Game
     </h1>
   </div>
-</section>
-
-
-<section class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-5 pt-0 h-screen">
-  <!-- Parent Container -->
-  <div class="flex flex-col lg:flex-row gap-6 h-full">
+ <!-- Parent Container -->
+  <div class="flex flex-col lg:flex-row gap-6 h-auto lg:h-full">
     
-    <!-- Left Content -->
-    <div class="w-full lg:w-2/3 h-screen pr-2 overflow-y-auto custom-scroll">
+  <!-- Left Content -->
+  <div class="w-full lg:w-2/3 pr-2 lg:h-full lg:overflow-y-auto custom-scroll">
+  
         
 
   
@@ -112,33 +112,92 @@
          <!-- Paragraphs -->
     
 <div>
-  <p class="text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl font-normal text-black pt-6 sm:pt-8 md:pt-20  2xl:pt-32 xl:pt-20">
+  <p class="text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-2xl font-normal text-black pt-6 sm:pt-8 md:pt-20  2xl:pt-32 xl:pt-20">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante augue, cursus in nisl quis, ornare posuere turpis. Etiam scelerisque magna in pulvinar semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed finibus augue nec massa imperdiet, sed interdum risus consectetur. Ut faucibus risus non purus lacinia, ac condimentum ligula condimentum. Nam non blandit eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc placerat velit ac justo gravida venenatis. Maecenas eget blandit massa. Sed vitae tortor vehicula metus auctor vestibulum.
   </p>
 
-  <p class="text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl font-normal text-black pt-6 sm:pt-8 md:pt-16">
+  <p class="text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-2xl font-normal text-black pt-6 sm:pt-8 md:pt-16">
     Cras porttitor tortor non lacus ornare, nec ultrices libero vulputate. Nunc risus orci, accumsan ut porta et, suscipit quis quam. Morbi rhoncus sem ut est efficitur tincidunt. Sed blandit nibh varius eros semper imperdiet. Vivamus id urna arcu. Vestibulum venenatis ex nunc, at egestas lacus tincidunt 
   </p>
 
-  <p class="text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-3xl font-normal text-black pt-6 sm:pt-8 md:pt-16">
+  <p class="text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-2xl font-normal text-black pt-6 sm:pt-8 md:pt-16">
     Donec magna ex, pretium rhoncus tincidunt a, mattis et diam. Phasellus in purus in nibh sollicitudin eleifend vel id sem. Donec luctus dictum nisi. Phasellus blandit nibh sed pharetra mattis. Sed arcu est, facilisis sed pulvinar eget, sagittis ut augue. Proin ac massa sollicitudin, gravida elit ac, vehicula velit. Phasellus tellus nulla, commodo vitae lacinia ut, feugiat vel libero. Curabitur sit amet metus vitae ligula iaculis ullamcorper. In commodo non dui eu facilisis. Donec ullamcorper suscipit egestas. In hac habitasse platea dictumst. Cras pellentesque ex nec nulla eleifend fermentum. Vivamus tincidunt, felis non luctus dapibus, neque augue viverra arcu, eget euismod ex tellus eu 
   </p>
 </div>
+  <div class="w-full bg-white mb-16">
+    <!-- Title -->
+    <h2 class="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-[76px] font-bold text-black mb-6 sm:mb-8 md:mb-10 lg:mb-14 xl:mb-16 2xl:mb-20">
+      Leave a Reply
+    </h2>
+
+    <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-black mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-16">
+      Your email address will not be published. Required fields are marked <span class="text-red-500">*</span>
+    </p>
+
+    <!-- Comment Form -->
+    <form action="#" method="POST" class="space-y-5">
+      <!-- Comment -->
+      <div>
+        <label for="comment" class="block text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-black mb-2 sm:mb-3 md:mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
+          Comment<span class="text-black">*</span>
+        </label>
+        <textarea id="comment" rows="7" class="w-full border-[2px] border-black rounded-md p-3  focus:outline-none"></textarea>
+      </div>
+
+      <!-- Name -->
+      <div>
+        <label for="name" class="block text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-black mb-2 sm:mb-3 md:mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
+          Name<span class="text-black">*</span>
+        </label>
+        <input type="text" id="name" class="w-full border-[2px] border-black rounded-md p-3  focus:outline-none">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-black mb-2 sm:mb-3 md:mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
+          Email<span class="text-black">*</span>
+        </label>
+        <input type="email" id="email" class="w-full border-[2px] border-black rounded-md p-3  focus:outline-none">
+      </div>
+
+      <!-- Website -->
+      <div>
+        <label for="website" class="block text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-black mb-2 sm:mb-3 md:mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
+          Website
+        </label>
+        <input type="url" id="website" class="w-full border-[2px] border-black rounded-md p-3  focus:outline-none">
+      </div>
+
+      <!-- Checkbox -->
+      <div class="flex items-center">
+        <input id="saveInfo" type="checkbox" class="h-4 w-4 text-black border-b">
+        <label for="saveInfo" class="ml-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-3xl font-normal text-black">
+          Save my name, email, and website in this browser for the next time I comment.
+        </label>
+      </div>
+
+      <div class="pt-6 sm:pt-8 md:pt-10">
+        <!-- Submit Button -->
+        <button type="submit" class="bg-[#1E1E1E] text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl  2xl:text-3xl font-bold hover:bg-black transition">
+          Post Comment
+        </button>
+      </div>
+    </form>
   </div>
   
+</div>
 
-    <!-- Right Sidebar -->
-    <div class="w-full lg:w-1/3 h-full pl-2 overflow-y-auto custom-scroll mt-10">
-    
+  <!-- Right Sidebar -->
+  <div class="w-full lg:w-1/3 pl-2 lg:h-full lg:overflow-y-auto custom-scroll mt-10">
 
-       
+   
          <!-- Featured Card -->
       <div class="bg-white rounded-lg ">
         <img src="./assets/img/Rectangle 76 (2).png" alt="Featured" class="w-full h-auto max-h-48 object-cover">
       </div>
 
       <div>
-        <h2 class="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl pb-4">
+        <h2 class="font-bold text-base  md:text-lg lg:text-xl xl:text-xl pb-4">
           Epic Headlines, Always Fresh, Always Here
         </h2>
         <p class="text-[#1E1E1E] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xs pb-6">
@@ -260,76 +319,11 @@
 
 
 
-</div>
+
     
   
     </div>
-
-  </div>
-</section>
-
-
-
-<section class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 pt-10">
-  <div class="w-full bg-white mb-16">
-    <!-- Title -->
-    <h2 class="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-[76px] font-bold text-black mb-6 sm:mb-8 md:mb-10 lg:mb-14 xl:mb-16 2xl:mb-20">
-      Leave a Reply
-    </h2>
-
-    <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-black mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-14 2xl:mb-16">
-      Your email address will not be published. Required fields are marked <span class="text-red-500">*</span>
-    </p>
-
-    <!-- Comment Form -->
-    <form action="#" method="POST" class="space-y-5">
-      <!-- Comment -->
-      <div>
-        <label for="comment" class="block text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-black mb-2 sm:mb-3 md:mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
-          Comment<span class="text-black">*</span>
-        </label>
-        <textarea id="comment" rows="7" class="w-full border-[2px] border-black rounded-md p-3  focus:outline-none"></textarea>
-      </div>
-
-      <!-- Name -->
-      <div>
-        <label for="name" class="block text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-black mb-2 sm:mb-3 md:mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
-          Name<span class="text-black">*</span>
-        </label>
-        <input type="text" id="name" class="w-full border-[2px] border-black rounded-md p-3  focus:outline-none">
-      </div>
-
-      <!-- Email -->
-      <div>
-        <label for="email" class="block text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-black mb-2 sm:mb-3 md:mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
-          Email<span class="text-black">*</span>
-        </label>
-        <input type="email" id="email" class="w-full border-[2px] border-black rounded-md p-3  focus:outline-none">
-      </div>
-
-      <!-- Website -->
-      <div>
-        <label for="website" class="block text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-normal text-black mb-2 sm:mb-3 md:mb-4 lg:mb-6 xl:mb-8 2xl:mb-10">
-          Website
-        </label>
-        <input type="url" id="website" class="w-full border-[2px] border-black rounded-md p-3  focus:outline-none">
-      </div>
-
-      <!-- Checkbox -->
-      <div class="flex items-center">
-        <input id="saveInfo" type="checkbox" class="h-4 w-4 text-black border-b">
-        <label for="saveInfo" class="ml-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-3xl font-normal text-black">
-          Save my name, email, and website in this browser for the next time I comment.
-        </label>
-      </div>
-
-      <div class="pt-6 sm:pt-8 md:pt-10">
-        <!-- Submit Button -->
-        <button type="submit" class="bg-[#1E1E1E] text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl  2xl:text-3xl font-bold hover:bg-black transition">
-          Post Comment
-        </button>
-      </div>
-    </form>
+</div>
   </div>
 </section>
 
@@ -338,8 +332,16 @@
 
 
 
-<footer class="bg-[#1E1E1E] w-full  relative">
-    <div class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20 2xl:pt-60 xl:pt-40  xl:pb-10 py-10  lg:pt-48 md:pt-48 pt-72">
+
+
+
+
+
+
+
+
+<footer class="bg-[#1E1E1E] w-full">
+    <div class="px-6 sm:px-8 md:px-6 lg:px-8 xl:px-20  pt-20">
      <div class="w-full flex flex-col lg:flex-row lg:justify-between gap-10">
 
    <!-- Left Section (Logo + Text + Social Icons) -->
@@ -351,7 +353,7 @@
        >
   </div>
 
-  <p class="text-base sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-[28px] text-white leading-relaxed lg:leading-7 xl:leading-10 2xl:pt-6 ">
+  <p class="text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-2xl text-white leading-relaxed lg:leading-7 xl:leading-10 2xl:pt-6 ">
     Potshow is a full-featured Elementor Template Kit created to help you
     set up and manage your Radio Station & Podcast website in no time.
   </p>
