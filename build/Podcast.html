@@ -10,6 +10,18 @@
 />
   <title>Document</title>
 </head>
+
+ <!-- 🔹 Preloader -->
+  <div id="preloader" class="fixed inset-0 bg-black flex items-center justify-center z-50 transition-opacity duration-500">
+    <img src="./assets/img/smile_loader_by_gleb.gif" 
+         alt="Loading..." 
+         class="w-96 ">
+  </div>
+
+  <!-- 🔹 Page Content -->
+  <div id="content" class="opacity-0 transition-opacity duration-700">
+
+
 <body class="dark:bg-black ">
     <!-- ✅ Responsive Navbar -->
 
@@ -48,13 +60,20 @@
               <!-- Toggle Button -->
 <button id="darkToggle" 
   class="  rounded-full   transition">
-  <!-- Light Mode Icon (Sun) -->
-  <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" 
-       class="h-6 w-6 text-black dark:hidden" fill="none" 
-       viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M12 3v1m0 16v1m8.66-12.66l-.71.71M4.05 19.95l.71-.71M21 12h-1M4 12H3m16.95 7.95l-.71-.71M6.34 6.34l-.71-.71M12 5a7 7 0 100 14a7 7 0 000-14z" />
-  </svg>
+  <svg id="sunIcon" class="dark:hidden icon-sun w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3.5" fill="currentColor"></circle>
+          <path d="M12 1v2" />
+          <path d="M12 21v2" />
+          <path d="M4.22 4.22l1.42 1.42" />
+          <path d="M18.36 18.36l1.42 1.42" />
+          <path d="M1 12h2" />
+          <path d="M21 12h2" />
+          <path d="M4.22 19.78l1.42-1.42" />
+          <path d="M18.36 5.64l1.42-1.42" />
+        </g>
+      </svg>
 
   <!-- Dark Mode Icon (Moon) -->
   <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" 
@@ -94,13 +113,22 @@
   <a href="./Contact.html" class="block text-white">Contact</a>
   <button id="darkToggle" 
   class="  rounded-full   transition">
-  <!-- Light Mode Icon (Sun) -->
-  <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" 
-       class="h-6 w-6 text-black dark:hidden" fill="none" 
-       viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M12 3v1m0 16v1m8.66-12.66l-.71.71M4.05 19.95l.71-.71M21 12h-1M4 12H3m16.95 7.95l-.71-.71M6.34 6.34l-.71-.71M12 5a7 7 0 100 14a7 7 0 000-14z" />
-  </svg>
+
+  
+  <svg id="sunIcon" class="dark:hidden icon-sun w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3.5" fill="currentColor"></circle>
+          <path d="M12 1v2" />
+          <path d="M12 21v2" />
+          <path d="M4.22 4.22l1.42 1.42" />
+          <path d="M18.36 18.36l1.42 1.42" />
+          <path d="M1 12h2" />
+          <path d="M21 12h2" />
+          <path d="M4.22 19.78l1.42-1.42" />
+          <path d="M18.36 5.64l1.42-1.42" />
+        </g>
+      </svg>
 
   <!-- Dark Mode Icon (Moon) -->
   <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" 
@@ -108,6 +136,8 @@
        viewBox="0 0 24 24">
     <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
   </svg>
+
+
 </button>
 
   <!-- ✅ Donated Button -->
@@ -627,6 +657,26 @@ document.querySelectorAll(".faq-toggle").forEach((btn) => {
   });
 });
 
+</script>
+
+
+<!-- loder -->
+<script>
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    const content = document.getElementById("content");
+
+    
+    setTimeout(() => {
+      preloader.classList.add("opacity-0");
+
+      setTimeout(() => {
+        preloader.style.display = "none";
+
+        content.classList.remove("opacity-0");
+      }, ); 
+    }, 500);
+  });
 </script>
 
 <!-- ✅ JS for Toggle -->
